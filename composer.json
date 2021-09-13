@@ -18,6 +18,9 @@
             "DiffyCli\\": "tests/src"
         }
     },
+    "bin": [
+      "diffy"
+    ],
     "require": {
         "php": ">=7.1",
         "consolidation/robo": "^2",
