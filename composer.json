@@ -23,7 +23,7 @@
     ],
     "require": {
         "php": ">=7.1",
-        "consolidation/robo": "^2",
+        "consolidation/robo": "^1",
         "diffywebsite/diffy-php": "1.x-dev",
         "guzzlehttp/guzzle": "^6.5"
     },
