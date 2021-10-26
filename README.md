@@ -69,10 +69,16 @@ Allowed environments are: prod, stage, dev, custom.
 If you want to update your config (For example, from CICD)
 
 ```shell script
-diffy project:update PROJECT_ID ./examples/diffy.config.json
+diffy project:update PROJECT_ID ./examples/diffy_update_project.json
 ```
 
-See the ./examples/diffy.config.json fule for a valid config file.
+See the ./examples/diffy_update_project.json file for a valid config file.
+
+Similar you can create a project by passing the config file.
+
+```shell script
+diffy project:create ./examples/diffy_create_project.json
+```
 
 Get the full settings of the project
 
@@ -88,9 +94,15 @@ diffy diff:list PROJECT_ID PAGE_NUMBER
 PROJECT_ID is an ID of the project. You can get it from URL of your project.
 PAGE_NUMBER is number of the page results (starts from 0)
 
+Create screenshots from images
+
+```shell script
+diffy screenshot:create-uploaded 342 ./examples/diffy_create_screenshot_upload.json
+```
+
 ### Github integration
 
-Main documentation page http://diffy.website/documentation/github-integration 
+Main documentation page http://diffy.website/documentation/github-integration
 
 The only difference you will need to have is to pass commit sha to compare operation:
 
